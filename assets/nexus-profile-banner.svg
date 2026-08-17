@@ -1,0 +1,46 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#05070D"/>
+      <stop offset="0.45" stop-color="#0C1230"/>
+      <stop offset="1" stop-color="#12061C"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="100" y1="300" x2="1080" y2="40" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00E5FF"/>
+      <stop offset="0.45" stop-color="#7C4DFF"/>
+      <stop offset="1" stop-color="#FF3D81"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientTransform="translate(190 120) rotate(25) scale(390 240)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00D9FF" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#00D9FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientTransform="translate(1010 260) rotate(195) scale(430 250)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF2D95" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#FF2D95" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="26"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="360" rx="30" fill="url(#bg)"/>
+  <rect width="1200" height="360" rx="30" fill="url(#glowA)"/>
+  <rect width="1200" height="360" rx="30" fill="url(#glowB)"/>
+  <g opacity="0.2">
+    <path d="M0 71H1200M0 143H1200M0 215H1200M0 287H1200" stroke="#5E6A95"/>
+    <path d="M120 0V360M240 0V360M360 0V360M480 0V360M600 0V360M720 0V360M840 0V360M960 0V360M1080 0V360" stroke="#5E6A95"/>
+  </g>
+  <circle cx="1030" cy="70" r="130" fill="#7C4DFF" fill-opacity="0.08" filter="url(#blur)"/>
+  <circle cx="150" cy="320" r="150" fill="#00E5FF" fill-opacity="0.08" filter="url(#blur)"/>
+  <path d="M62 302C205 209 297 263 394 176C490 90 569 118 659 188C771 276 862 224 1138 63" stroke="url(#neon)" stroke-width="3" stroke-linecap="round" opacity="0.9"/>
+  <path d="M84 309C231 230 327 287 422 204C511 127 593 151 679 213C786 291 892 243 1112 98" stroke="url(#neon)" stroke-width="1" stroke-linecap="round" opacity="0.35"/>
+  <g transform="translate(78 72)">
+    <rect width="76" height="76" rx="19" fill="url(#neon)"/>
+    <path d="M20 54V22H29L47 43V22H57V54H48L30 33V54H20Z" fill="#05070D"/>
+  </g>
+  <text x="178" y="112" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="700" letter-spacing="1">TRÉSOR HONTONNOU</text>
+  <text x="180" y="153" fill="#9CA8D9" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" letter-spacing="4">TRESOR562  •  NEXUS TECH</text>
+  <text x="80" y="232" fill="#E9ECFF" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="600">Developer • AI • Cybersecurity • Automation • Bot Creator</text>
+  <text x="80" y="276" fill="#8C98C8" font-family="Arial, Helvetica, sans-serif" font-size="19">Building useful digital products, intelligent systems and connected experiences.</text>
+  <rect x="79" y="309" width="337" height="4" rx="2" fill="url(#neon)"/>
+  <text x="940" y="320" fill="#6E78A6" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" letter-spacing="3">BUILD • LEARN • SHIP</text>
+</svg>
