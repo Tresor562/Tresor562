@@ -9,8 +9,10 @@ const hash = s => crypto.createHash('sha256').update(s).digest('hex');
 const sign = s => crypto.createHmac('sha256', env('SESSION_SECRET')).update(s).digest('base64url');
 
 export async function db(){
-  clientPromise ??= new MongoClient(env('MONGODB_URI')).connect();
-  const d = (await clientPromise).db(process.env.NEXCONTROL_DB_NAME || 'nexcontrol');
+  const mongoUri = process.env.MONGODB_URI || process.env.NEXUS_MONGODB_URI;
+  if(!mongoUri) throw new Error('MONGODB_URI or NEXUS_MONGODB_URI missing');
+  clientPromise ??= new MongoClient(mongoUri).connect();
+  const d = (await clientPromise).db(process.env.NEXCONTROL_DB_NAME || process.env.NEXUS_MONGODB_DB_NAME || 'nexcontrol');
   if(!indexed){
     indexed = true;
     await Promise.all([
